@@ -1,2 +1,1 @@
-# david-gagnon
-Mechanical Design &amp; 3D CAD Services | Conception DJG Inc.
+Join me on a journey to living in AI world.
