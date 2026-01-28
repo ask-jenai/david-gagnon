@@ -3,6 +3,8 @@
 <head>
     <meta name="robots" content="index, follow" />
     <meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="alternate" hreflang="en-CA" href="https://conceptiondjg.com/en" />
+<link rel="alternate" hreflang="fr-CA" href="https://conceptiondjg.com/" />
 
   <meta charset="UTF-8" />
   <title>Mechanical Design & 3D CAD Services | Conception DJG Inc.</title>
@@ -306,6 +308,33 @@ header.header--shrink {
     .nav__toggle {
       display: none;
     }
+      .nav__lang {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-right: 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.nav__lang-link {
+  color: rgba(255,255,255,0.75);
+  text-transform: uppercase;
+}
+
+.nav__lang-link:hover {
+  color: #ffffff;
+}
+
+.nav__lang-link--active {
+  color: #ffffff;
+  cursor: default;
+}
+
+.nav__lang-separator {
+  color: rgba(255,255,255,0.4);
+}
+
 
     /* HERO */
 
@@ -1820,6 +1849,12 @@ header.header--shrink {
         <a href="#about" class="nav__link">About</a>
         <a href="#process" class="nav__link">Process</a>
         <a href="#contact" class="nav__link">Contact</a>
+          <div class="nav__lang">
+  <a href="/" class="nav__lang-link nav__lang-link--active">FR</a>
+  <span class="nav__lang-separator">|</span>
+  <a href="/en" class="nav__lang-link">EN</a>
+</div>
+
         <a href="https://calendly.com/conceptiondjg" class="nav__cta" target="_blank" rel="noopener">
   Book an Audit
 </a>
@@ -2325,7 +2360,7 @@ header.header--shrink {
   to help us understand how visitors use the site so we can improve it.
   You can accept or decline non-essential cookies at any time.
   For more information, see our
-  <a href="/privacy-policy">Privacy Policy</a>.
+  <a href="https://conceptiondjg.com/private-policy">Privacy Policy</a>.
 </p>
     </div>
 
