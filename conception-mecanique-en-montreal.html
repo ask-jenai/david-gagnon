@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="robots" content="index, follow" />
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <meta charset="UTF-8" />
+  <title>Services de conception mécanique et CAO | Conception DJG inc.</title>
+  <meta name="description" content="Services de conception mécanique, modélisation CAO 3D, DFM et optimisation des flux CAO pour équipes d’ingénierie et PME manufacturières." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <link rel="canonical" href="https://www.conceptiondjg.com/conception-mecanique-en-montreal" />
+
+
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mechanical Design and CAD Support That Keeps Projects Moving" />
+  <meta property="og:description" content="Expert 3D CAD modeling, product development support, DFM consulting, and CAD workflow optimization for founders, engineering teams, and manufacturing SMEs." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.conceptiondjg.com/mechanical-design-cad-services" />
+  <meta property="og:image" content="https://www.conceptiondjg.com/assets/og-mechanical-design.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mechanical Design and CAD Support That Keeps Projects Moving" />
+  <meta name="twitter:description" content="Mechanical design, 3D CAD modeling, DFM consulting, and CAD workflow optimization for growing engineering teams." />
+  <meta name="twitter:image" content="https://www.conceptiondjg.com/assets/og-mechanical-design.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&display=swap" rel="stylesheet" />
+
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="alternate" hreflang="fr-CA" href="https://conceptiondjg.com/" />
+<link rel="alternate" hreflang="en-CA" href="https://conceptiondjg.com/en" />
+
+  <style>
+    :root {
+      --color-primary: #10243E;
+      --color-secondary-1: #486581;
+      --color-secondary-2: #E96B3C;
+      --color-accent: #C4452F;
+      --color-bg: #FAF6F2;
+      --color-white: #ffffff;
+      --color-border: #dde1ea;
+      --color-muted: #7c8a9c;
+
+      --font-sans: "Work Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --max-width: 1120px;
+      --radius-lg: 16px;
+      --shadow-soft: 0 14px 40px rgba(0, 0, 0, 0.06);
+      --transition-fast: 0.18s ease-out;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-sans);
+      background-color: var(--color-bg);
+      color: var(--color-primary);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    button {
+      font-family: inherit;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.75rem;
+    }
+
+    /* HEADER / NAV */
+
+header {
+  background: var(--color-primary); /* or a solid color */
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+/* FORCE BRAND FLUSH-LEFT */
+header .container.nav {
+  padding-left: 0 !important;
+}
+
+/* Default header height */
+header {
+  padding: 0.75rem 0;
+  transition: padding 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Smaller header on scroll */
+header.header--shrink {
+  padding: 0.65rem 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+/* Adjust brand text sizes during shrink */
+.header--shrink .nav__brand-main {
+  font-size: 0.85rem;
+  transition: font-size 0.25s ease;
+}
+
+.header--shrink .nav__brand-sub {
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.nav__left {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+.nav__brand {
+  margin-left: 0 !important;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75em 1.75rem;  /* FIX: give the nav breathing room */
+}
+
+
+ .nav__left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding-left: 0.5rem; /* small micro-adjustment */
+}
+
+.nav__toggle {
+  color: #ffffff;
+  font-size: 1.6rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+}
+
+
+    .nav__logo-img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 20%, #E96B3C, #10243E);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-white);
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .nav__brand {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nav__brand-main {
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+    }
+    .nav__brand-main {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 1000; /* BLACK */
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.nav__brand-sub {
+  font-weight: 600;
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.75);
+}
+
+.nav__brand-main,
+.nav__brand-sub {
+  color: var(--color-white);
+}
+.nav__cta {
+  background: var(--color-secondary-2);
+  color: white;
+}
+
+    .nav__brand-sub {
+      font-weight: 400;
+      font-size: 0.75rem;
+      color: var(--color-muted);
+    }
+
+    .nav__links {
+      display: flex;
+      align-items: center;
+      gap: 1.75rem;
+      font-size: 0.9rem;
+    }
+.nav__lang {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-right: 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.nav__lang-link {
+  color: rgba(255,255,255,0.75);
+  text-transform: uppercase;
+}
+
+.nav__lang-link:hover {
+  color: #ffffff;
+}
+
+.nav__lang-link--active {
+  color: #ffffff;
+  cursor: default;
+}
+
+.nav__lang-separator {
+  color: rgba(255,255,255,0.4);
+}
+
+    .nav__link {
+      position: relative;
+      font-weight: 500;
+    }
+/* NAV LINK HOVER COLOR — TURN RED */
+.nav__link {
+  color: #FFFFFF; /* default text color on navy */
+  transition: color 0.2s ease;
+}
+
+.nav__link:hover,
+.nav__link:focus-visible {
+  color: #C4452F; /* your red accent color */
+}
+.nav__link::after {
+  background: #C4452F; /* underline color on hover */
+}
+
+    .nav__link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -0.25rem;
+      width: 0;
+      height: 2px;
+      background: var(--color-secondary-2);
+      transition: width var(--transition-fast);
+    }
+.nav__link {
+  color: var(--color-white);
+}
+.nav__link::after {
+  background: var(--color-secondary-2);
+}
+ /* FINAL OVERRIDE — NAV LINKS HOVER RED */
+.nav__link:hover,
+.nav__link:focus-visible {
+  outline: none;
+  color: #C4452F !important; /* red */
+}
+
+.nav__link::after {
+  background: #C4452F !important; /* underline also red */
+}
+
+
+    .nav__link:hover::after,
+    .nav__link:focus-visible::after {
+      width: 18px;
+    }
+
+    .nav__cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem 1.2rem;
+      border-radius: 999px;
+      background: var(--color-secondary-2);
+      color: var(--color-white);
+      font-weight: 600;
+      font-size: 0.9rem;
+      border: none;
+      cursor: pointer;
+      transition: background var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
+      box-shadow: none;
+    }
+
+   .nav__cta:hover,
+.nav__cta:focus-visible {
+  background: var(--color-accent);
+  transform: translateY(-1px);
+  box-shadow: none;
+}
+
+
+    .nav__toggle {
+      display: none;
+    }
+#about {
+  scroll-margin-top: 120px;
+}
+
+#audit {
+  scroll-margin-top: 120px;
+}
+    /* HERO */
+
+    main {
+      flex: 1;
+    }
+
+.mobile-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  background: #10243E;
+  display: none;
+  flex-direction: column;
+  padding: 1.5rem;
+  gap: 1.2rem;
+  z-index: 999;
+}
+
+.mobile-menu a {
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.mobile-cta {
+  background: #E96B3C;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.hero__image {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+  background: #eee; /* subtle placeholder background */
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+/* Full-screen video hero */
+.hero {
+  height: auto;
+  min-height: 480px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 6rem 0;
+
+  background: url("conception-mecanique.jpg") center / cover no-repeat;
+}
+
+/* Overlay tint */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(5, 12, 22, 0.72); /* much darker */
+  z-index: 1;
+}
+
+/* Bring inner content above video + overlay */
+.hero__inner {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+    .hero__eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--color-secondary-1);
+      margin-bottom: 0.75rem;
+    }
+
+    .hero__title {
+      font-family: var(--font-sans);
+      font-size: clamp(2.3rem, 4vw, 2.9rem);
+      line-height: 1.1;
+      font-weight: 900; /* Work Sans Black */
+      margin: 0 0 1.25rem;
+      color: var(--color-primary);
+    }
+
+    .hero__subtitle {
+          white-space: normal;
+      font-size: 1rem;
+     max-width: none;
+      color: var(--color-secondary-1);
+      margin-bottom: 1.75rem;
+    }
+
+    .hero__cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+      align-items: center;
+      margin-bottom: 0.9rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.75rem 1.4rem;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: background var(--transition-fast), color var(--transition-fast),
+                  transform var(--transition-fast), box-shadow var(--transition-fast),
+                  border-color var(--transition-fast);
+    }
+
+.btn--primary {
+  background: var(--color-secondary-2);
+  color: var(--color-white);
+  box-shadow: none;
+}
+
+
+  .btn--primary:hover,
+.btn--primary:focus-visible {
+  background: var(--color-accent);
+  transform: translateY(-1px);
+  box-shadow: none;
+}
+
+
+    .btn--ghost {
+      background: transparent;
+      border-color: rgba(16, 36, 62, 0.14);
+      color: var(--color-primary);
+    }
+
+    .btn--ghost:hover,
+    .btn--ghost:focus-visible {
+      border-color: var(--color-secondary-1);
+      background: rgba(16, 36, 62, 0.02);
+      outline: none;
+    }
+
+    .hero__subtext {
+      font-size: 0.9rem;
+      color: var(--color-muted);
+    }
+
+    .hero__badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 2rem;
+      font-size: 0.85rem;
+    }
+
+    .hero__badge {
+      padding: 0.3rem 0.8rem;
+      border-radius: 999px;
+      border: 1px solid rgba(16, 36, 62, 0.08);
+      background: rgba(255, 255, 255, 0.9);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      color: var(--color-muted);
+    }
+
+    .hero__badge-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--color-secondary-2);
+    }
+
+    .hero__visual {
+      position: relative;
+      height: 100%;
+    }
+
+    .hero__card {
+      position: relative;
+      background: var(--color-white);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-soft);
+      padding: 1.4rem 1.4rem 1.2rem;
+      max-width: 420px;
+      margin-left: auto;
+    }
+
+    .hero__card-heading {
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin: 0 0 0.35rem;
+      color: var(--color-secondary-1);
+    }
+
+    .hero__card-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin: 0 0 0.75rem;
+    }
+
+    .hero__card-metrics {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.7rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero__metric {
+      background: rgba(250, 246, 242, 0.9);
+      border-radius: 10px;
+      padding: 0.55rem 0.7rem;
+    }
+
+    .hero__metric-label {
+      font-size: 0.7rem;
+      color: var(--color-muted);
+      margin-bottom: 0.2rem;
+    }
+
+    .hero__metric-value {
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .hero__card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.75rem;
+      color: var(--color-muted);
+    }
+
+    .hero__status-pill {
+      padding: 0.2rem 0.7rem;
+      border-radius: 999px;
+      background: rgba(72, 101, 129, 0.08);
+      color: var(--color-secondary-1);
+      font-weight: 500;
+    }
+.hero__title,
+.hero__subtitle,
+.hero__subtext,
+.hero__eyebrow {
+  color: #ffffff !important;
+}
+
+    /* GENERIC SECTION STYLES */
+
+    section {
+      padding: 3.5rem 0;
+    }
+
+    .section__header {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      margin-bottom: 2rem;
+    }
+
+    .section__eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.13em;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--color-muted);
+    }
+
+    .section__title {
+      font-size: 1.5rem;
+      font-weight: 800;
+      margin: 0;
+    }
+
+    .section__intro {
+      font-size: 0.98rem;
+      max-width: 36rem;
+      color: var(--color-secondary-1);
+    }
+    .two-col {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+  
+
+/* Mobile */
+@media (max-width: 720px) {
+  .testimonial-card {
+    padding: 2.25rem 1.75rem;
+  }
+}
+
+
+/* ---------- BENEFITS SECTION  ---------- */
+
+
+/
+    /* CTA / CONTACT */
+
+   .cta {
+  background: #E96B3C; /* bright orange */
+  color: #ffffff;
+  text-align: center;
+  padding: 5rem 0 6.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+    .cta__content {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    .cta__title {
+      font-size: 1.8rem;
+      font-weight: 900;
+      margin: 0 0 0.9rem;
+    }
+
+    .cta__text {
+      font-size: 0.98rem;
+      max-width: 30rem;
+      margin-bottom: 1.6rem;
+    }
+
+.cta__btn-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2.5rem; /* <-- THIS pushes buttons lower */
+  flex-wrap: wrap;
+}
+
+
+/* CTA-SPECIFIC BUTTON TWEAKS ONLY */
+.cta .btn {
+  font-size: 0.95rem;
+  padding: 0.9rem 1.6rem;
+}
+
+/* Outline style for email button */
+.btn--cta-outline {
+  background: transparent;
+  border: 1.5px solid rgba(255,255,255,0.8);
+  color: #ffffff;
+}
+
+.btn--cta-outline:hover {
+  background: rgba(255,255,255,0.12);
+}
+
+
+    .btn--light {
+      background: var(--color-white);
+      color: var(--color-primary);
+      border-color: transparent;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+    }
+
+   .btn--light:hover,
+.btn--light:focus-visible {
+  background: #f7f3ee;
+  box-shadow: none;
+}
+
+
+    /* FOOTER */
+ footer {
+      background: #0b1829;
+      color: rgba(250, 246, 242, 0.88);
+      padding: 2.3rem 0 2rem;
+      font-size: 0.85rem;
+    }
+
+    .footer__top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .footer__brand {
+      max-width: 18rem;
+    }
+
+    .footer__brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      margin-bottom: 0.7rem;
+    }
+
+    .footer__brand-logo img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid rgba(250, 246, 242, 0.5);
+    }
+
+    .footer__brand-tagline {
+      color: rgba(250, 246, 242, 0.75);
+      margin: 0;
+    }
+
+    .footer__links,
+    .footer__legal {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .footer__heading {
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+
+    .footer__link a {
+      color: rgba(250, 246, 242, 0.85);
+    }
+
+    .footer__link a:hover {
+      color: #ffffff;
+    }
+
+    .footer__bottom {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1rem;
+      border-top: 1px solid rgba(250, 246, 242, 0.12);
+      padding-top: 1rem;
+      font-size: 0.78rem;
+      color: rgba(250, 246, 242, 0.7);
+    }
+
+    /* COOKIE BANNER */
+  /* COOKIE BANNER */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    padding: 2rem 3rem;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9999;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.cookie-content {
+    max-width: 70%;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #10243E;
+}
+
+.cookie-content a {
+    color: #486581;
+    text-decoration: underline;
+}
+
+.cookie-actions {
+    min-width: 140px;
+    text-align: right;
+}
+
+.cookie-accept {
+    background: #000;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.cookie-accept:hover {
+    opacity: 0.85;
+}
+
+.cookie-close {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.5rem;
+    background: transparent;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+
+    /* RESPONSIVE */
+
+    @media (max-width: 960px) {
+      .hero__inner,
+      .about__inner,
+      .offer__inner,
+.cta__content {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+      .hero__visual {
+        order: -1;
+      }
+
+      .hero__card {
+        margin: 0 auto;
+      }
+
+         .services-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+
+      .process__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 720px) {
+      .nav__links {
+        display: none;
+      }
+
+      .nav__toggle {
+        display: inline-flex;
+        background: none;
+        border: none;
+        padding: 0.4rem;
+        cursor: pointer;
+        font-size: 1.2rem;
+      }
+
+      .hero__title {
+        font-size: 2.1rem;
+      }
+
+      .services-container {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+
+      .process__grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .why-list {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .cta__content {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero__text-box {
+  background: rgba(5, 12, 22, 0.85); /* darker, cleaner */
+  padding: 2.25rem 2.75rem;
+  border-radius: 14px;
+  max-width: 700px;
+  backdrop-filter: blur(3px);
+}
+
+
+      .form-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .cookie-banner {
+        border-radius: 18px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .cookie-banner__actions {
+        width: 100%;
+        justify-content: flex-end;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+/* -------------------------------------------
+   SERVICES SPLIT — EDITORIAL LAYOUT
+------------------------------------------- */
+
+.services-split {
+  background: var(--color-bg);
+  padding: 6rem 0;
+}
+
+.services-split__inner {
+  display: grid;
+grid-template-columns: 1.2fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.services-split__title {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+  color: var(--color-primary);
+}
+.services-split__title--full {
+  grid-column: 1 / -1;
+  max-width: none;
+  margin-bottom: 1.75rem; /* ← no space */
+  text-align: left;
+}
+
+
+.services-split__content {
+  font-size: 0.98rem;
+  color: var(--color-secondary-1);
+  margin-bottom: 1rem;
+  max-width: 48ch;
+  padding-left: 0rem;
+    margin-left: 0;
+}
+ .services-split__inner {
+  row-gap: 2rem; /* instead of default large gap */
+}
+
+.services-split__footer {
+  margin-top: 1.25rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-muted);
+}
+
+.services-split__image img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  align-self: flex-start;
+  object-fit: cover;
+  border: 1px solid rgba(16, 36, 62, 0.08);
+}
+@media (max-width: 900px) {
+  .services-split__inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .services-split__title,
+  .services-split__content p {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .services-split__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* FULL CENTERED CTA SECTION */
+.cta {
+  background: #E96B3C;
+  padding: 4rem 0;
+  color: #fff;
+  text-align: center;
+}
+
+.cta__content {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* <— This centers everything horizontally */
+  text-align: center;    /* <— This centers text */
+}
+
+.cta__title {
+  text-align: center !important;
+}
+
+.cta__text {
+  text-align: center !important;
+  max-width: 600px;
+}
+
+  /* FINAL CTA ONLY — does not affect other CTAs */
+.cta--final {
+  padding: 5.5rem 0 7rem;
+}
+
+.cta--final .cta__content {
+  max-width: 720px;
+  margin: 0 auto;
+
+.impact-support {
+  font-size: 0.75rem !important;
+  line-height: 1.35 !important;
+  max-width: 620px;
+  color: #dce3ea;
+}
+.learn-more:hover {
+  color: #C4452F;
+  text-decoration: underline;
+}
+
+
+  </style>
+</head>
+<body>
+<div class="page">
+ <header>
+  <div class="container nav">
+
+    <div class="nav__left">
+     <div class="nav__brand">
+        <a href="/" class="nav__brand">
+  <span class="nav__brand-main">Conception DJG inc.</span>
+  </a>
+        <span class="nav__brand-sub">
+          Conception mécanique et services-conseils en CAO
+        </span>
+      </div>
+    </div>
+
+    <nav class="nav__links">
+      <a href="#services" class="nav__link">Services</a>
+      <a href="https://conceptiondjg.com/en#about" class="nav__link">About</a>
+      <a href="https://conceptiondjg.com/en#process" class="nav__link">Process</a>
+      <a href="https://calendly.com/conceptiondjg" class="nav__link">Contact</a>
+    </nav>
+<div class="nav__lang">
+  <a href="/" class="nav__lang-link">FR</a>
+<a href="/en" class="nav__lang-link nav__lang-link--active">EN</a>
+  <span class="nav__lang-separator">|</span>
+  <a href="/en" class="nav__lang-link">EN</a>
+</div>
+
+    <a href="https://conceptiondjg.com/#audit" class="nav__cta">Réserver un audit</a>
+
+    <button class="nav__toggle" aria-label="Ouvrir le menu">
+      ☰
+    </button>
+
+  </div>
+</header>
+  <main>
+    <!-- HERO -->
+   
+<section id="hero" class="hero">
+
+
+  <div class="container hero__inner">
+    <div>
+     <div class="hero__text-box">
+ <h1 class="hero__title">
+  Services de conception mécanique pour la fabrication
+</h1>
+
+  <p class="hero__subtitle">
+Nous concevons des systèmes mécaniques fiables et fabricables, prêts pour la production.
+</p>
+
+</div>
+
+</section>   <!-- end of hero -->
+ <section class="services-split">
+  <div class="container services-split__inner">
+
+    <h2 class="services-split__title services-split__title--full">
+     Soutien en conception mécanique industrielle et ingénierie CAO
+    </h2>
+
+    <div class="services-split__content">
+      <p>
+      Nos services de conception mécanique accompagnent les entreprises industrielles et les équipes d’ingénierie dans le développement de systèmes mécaniques fiables et fabricables. Nous concevons en tenant compte des contraintes de fabrication et de production afin de réduire les reprises, maîtriser les coûts et accélérer la mise en production.
+</p>
+     <ul>
+      <li>Systèmes mécaniques conçus pour la fabricabilité et la préparation à la production</li>
+      <li>Conceptions claires et adaptées à la fabrication, réduisant les révisions et les délais</li>
+      <li>Soutien en ingénierie adapté aux équipes industrielles et aux PME manufacturières</li>
+    </ul>
+    <p>
+      Ce service est souvent offert en complément de nos services de
+      <a href="modelisation-cao-3d.html">CAD modeling services</a>
+      et de
+      <a href="dfm.html">design for manufacturing (DFM)</a>
+      afin d’assurer une transition fluide de la conception à la production.
+    </p>
+    </div>
+    <div class="services-split__image">
+      <img src="3dcadconsulting.jpg" alt="Conception mécanique et préparation à la fabrication">
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- CTA (now full-width) -->
+<section id="contact" class="cta" aria-labelledby="cta-heading">
+  <div class="container cta__content">
+    <div class="cta__copy">
+      <h2 id="cta-heading" class="cta__title">Prêt à démarrer votre projet ?</h2>
+
+      <p class="cta__text">
+        Passez à la prochaine étape avec une conception sur laquelle vous pouvez compter. Que ce soit pour une refonte CAO complète ou la validation d’un prototype, nous sommes là pour soutenir vos objectifs.
+      </p>
+
+      <div class="cta__btn-row">
+        <a href="https://calendly.com/conceptiondjg" class="btn btn--light">Réserver un audit</a>
+
+        <a href="mailto:info@conceptiondjg.com"
+           class="btn btn--ghost btn--cta-outline">
+        Écrire à David
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  </main>
+
+  <!-- FOOTER -->
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="footer__brand-logo">
+            <!-- Replace with actual logo.png -->
+            <div>
+              <div class="nav__brand-main" style="color:#FAF6F2;">Conception DJG inc.</div>
+              <div class="nav__brand-sub" style="color:rgba(250,246,242,0.7);">Conception mécanique et services-conseils en CAO
+</div>
+            </div>
+          </div>
+        </div>
+
+      <div class="footer__links">
+        <div class="footer__heading">Site</div>
+        <div class="footer__link"><a href="https://conceptiondjg.com/#hero">Accueil</a></div>
+        <div class="footer__link"><a href="https://conceptiondjg.com/#services">Services</a></div>
+        <div class="footer__link"><a href="https://conceptiondjg.com/#about">À propos</a></div>
+        </div>
+
+        <div class="footer__links">
+          <div class="footer__heading">Connect</div>
+          <div class="footer__link">
+            <a href="https://www.linkedin.com/in/david-gagnon-b4676019/" target="_blank" rel="noopener noreferrer">
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__legal">
+          <div class="footer__heading">Legal</div>
+          <div class="footer__link">
+            <a href="https://conceptiondjg.com/private-policy">
+  Politique de confidentialité
+</a>
+
+          </div>
+          <div class="footer__link">
+            <a href="/cookies">aramètres des témoins</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© <span id="year"></span> Conception DJG inc. Tous droits réservés.</span>
+        <span>Conçu pour la clarté, la fabricabilité et la performance.</span>
+      </div>
+    </div>
+  </footer>
+
+      
+     
+
+  <!-- COOKIE BANNER -->
+<div id="cookie-banner" class="cookie-banner">
+    <button class="cookie-close" id="cookie-close">&times;</button>
+
+    <div class="cookie-content">
+      <p>
+  Ce site utilise des témoins (cookies) afin d’assurer son bon fonctionnement et, avec votre consentement, de mieux comprendre l’utilisation du site pour en améliorer le contenu.
+Vous pouvez accepter ou refuser les témoins non essentiels en tout temps.
+Pour en savoir plus, consultez notre politique de confidentialité.
+  For more information, see our
+  <a href="https://conceptiondjg.com/private-policy">
+  Private Policy
+</a>
+
+</p>
+    </div>
+
+   <div class="cookie-actions">
+    <button id="cookie-accept" class="cookie-accept">Accepter</button>
+    <button id="cookie-decline" class="cookie-accept" style="background:#ccc; color:#000; margin-left: 0.5rem;">
+        Refuser
+    </button>
+</div>
+
+</div>
+
+
+<script>
+  // Dynamic year in footer
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  // Simple cookie banner logic (can be replaced with full consent tool)
+  (function () {
+    var banner = document.getElementById("cookie-banner");
+    if (!banner) return;
+
+    var consent = localStorage.getItem("cdjg_cookie_consent");
+    if (consent) {
+      banner.style.display = "none";
+      return;
+    }
+
+    function setConsent(value) {
+      localStorage.setItem("cdjg_cookie_consent", value);
+      banner.style.display = "none";
+    }
+
+    document.getElementById("cookie-accept").addEventListener("click", function () {
+      setConsent("all");
+    });
+
+    document.getElementById("cookie-decline").addEventListener("click", function () {
+      setConsent("necessary");
+    });
+  })();
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const counters = document.querySelectorAll('.stat-number');
+  const section = document.querySelector('.impact-section'); // target section
+
+  let animated = false; // prevent double running
+
+  const animateCounters = () => {
+    counters.forEach(counter => {
+      let finalValue = counter.innerText.replace(/\D/g, "");
+      let suffix = counter.innerText.replace(/[0-9]/g, "");
+      let count = 0;
+
+      let duration = 9000; // SLOW, PREMIUM ANIMATION
+      let step = Math.ceil(finalValue / (duration / 16));
+
+      const update = () => {
+        count += step;
+        if (count < finalValue) {
+          counter.innerText = count + suffix;
+          requestAnimationFrame(update);
+        } else {
+          counter.innerText = finalValue + suffix;
+        }
+      };
+
+      update();
+    });
+  };
+
+  const observer = new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting && !animated) {
+      animated = true;       // ensure it runs only once
+      animateCounters();
+      observer.disconnect();
+    }
+  }, { threshold: 0.4 });    // 40% of section must be visible
+
+  observer.observe(section);
+});
+</script>
+
+<script>
+  const navToggle = document.querySelector('.nav__toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  navToggle.addEventListener('click', () => {
+    const visible = mobileMenu.style.display === 'flex';
+    mobileMenu.style.display = visible ? 'none' : 'flex';
+  });
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const cards = document.querySelectorAll('.service-card');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, {
+    threshold: 0.25
+  });
+
+  cards.forEach(card => observer.observe(card));
+});
+</script>
+
+<script>
+document.addEventListener("scroll", () => {
+  const header = document.querySelector("header");
+  
+  if (window.scrollY > 40) {
+    header.classList.add("header--shrink");
+  } else {
+    header.classList.remove("header--shrink");
+  }
+});
+</script>
+<script>
+document.querySelectorAll(".faq-question").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const item = btn.parentElement;
+
+    // close others
+    document.querySelectorAll(".faq-item").forEach(faq => {
+      if (faq !== item) faq.classList.remove("active");
+    });
+
+    // toggle this one
+    item.classList.toggle("active");
+  });
+});
+</script>
+
+
+</body>
+</html>
